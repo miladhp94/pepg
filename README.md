@@ -73,3 +73,18 @@ The purpose of this prototype is to make the concept understandable first. Authe
 
 **PEPG Academic Article — Milad Habibpour**  
 DOI: https://doi.org/10.5281/zenodo.22118648
+
+## Join the Development
+
+You don't need to be a programmer.
+
+You can contribute by:
+
+• proposing ideas
+• criticizing the model
+• identifying weaknesses
+• proposing governance mechanisms
+• creating problem cases
+• improving documentation
+• developing the prototype
+• discussing PEPG
