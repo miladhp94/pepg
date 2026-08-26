@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PEPG | Problem Registry</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">PEPG</div>
+  <div class="subtitle">Platform-Enabled People Governance</div>
+</header>
+
+<section class="hero">
+  <span class="label">PROBLEM REGISTRY</span>
+  <h1>Problems first. People around them.</h1>
+  <p>PEPG is a simple coordination layer for identifying public problems and connecting the people, institutions and groups needed to solve them.</p>
+</section>
+
+<main>
+<section class="detector">
+  <div>
+    <span class="label">PROBLEM DETECTOR</span>
+    <h2>Detect and register a public problem</h2>
+    <p>Describe a problem, give it a title, and submit it to the public problem registry.</p>
+  </div>
+  <form onsubmit="detectProblem(event)">
+    <input id="problemName" required placeholder="Problem title, e.g. Poor road quality">
+    <textarea id="problemDesc" required placeholder="Briefly describe the problem..."></textarea>
+    <div class="detector-foot">
+      <span>Proposer: <strong>Your Name</strong> · <code>Your ID</code></span>
+      <button type="submit">Detect & Register</button>
+    </div>
+  </form>
+  <div id="detected" class="detected"></div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div>
+      <span class="label">REGISTERED PROBLEMS</span>
+      <h2>Public problems</h2>
+    </div>
+    <span class="count">2 examples</span>
+  </div>
+
+  <div class="problem-list">
+    <button class="problem-card" onclick="openProblem('governance')">
+      <span class="pid">PEPG-0001</span>
+      <span class="pbody">
+        <strong>Centralized governance, limited government capacity, and concentration of execution and oversight</strong>
+        <small>Problem proposer: Milad Habibpour · miladhp94 · Solution proposer: Milad Habibpour</small>
+      </span>
+      <span class="arrow">→</span>
+    </button>
+
+    <button class="problem-card" onclick="openProblem('road')">
+      <span class="pid">PEPG-0002</span>
+      <span class="pbody">
+        <strong>Poor asphalt quality on an abstract street in Tanzania</strong>
+        <small>Example public infrastructure problem</small>
+      </span>
+      <span class="arrow">→</span>
+    </button>
+  </div>
+</section>
+
+<section class="principles">
+  <span class="label">HOW PEPG THINKS</span>
+  <h2>The problem stays at the center</h2>
+  <div class="principle-grid">
+    <div><b>01</b><strong>Identify</strong><p>People can report and discuss problems in public spaces.</p></div>
+    <div><b>02</b><strong>Connect</strong><p>PEPG points to the groups and channels working on each part.</p></div>
+    <div><b>03</b><strong>Coordinate</strong><p>Solutions, funding, execution, contracts, oversight and reports remain connected to one problem.</p></div>
+    <div><b>04</b><strong>Publish</strong><p>Progress and outcomes can remain visible and traceable.</p></div>
+  </div>
+</section>
+</main>
+
+<div id="modal" class="modal">
+  <div class="modal-card">
+    <button class="close" onclick="closeModal()">×</button>
+    <span class="label">PROBLEM</span>
+    <div id="modalPid" class="modal-pid"></div>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription" class="modal-description"></p>
+    <div id="solutionBox"></div>
+    <div id="channels"></div>
+  </div>
+</div>
+
+<footer>PEPG Prototype · Concept v0.6 · Proposer: Milad Habibpour · miladhp94</footer>
+<script src="app.js"></script>
+</body>
+</html>
