@@ -75,7 +75,6 @@ The purpose of this prototype is to make the concept understandable first. Authe
 DOI: https://doi.org/10.5281/zenodo.22118648
 
 ## Join the Development
-
 You don't need to be a programmer.
 
 You can contribute by:
