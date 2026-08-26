@@ -4,7 +4,7 @@
 > **A problem-centered model for distributed, people-enabled public governance.**
 
 [![Research Paper](https://img.shields.io/badge/Research%20Paper-Zenodo-blue)](https://doi.org/10.5281/zenodo.22118648)
-[![Prototype](https://img.shields.io/badge/Prototype-Live-green)](#)
+[![Prototype](https://img.shields.io/badge/Prototype-Live-green)](https://miladhp94.github.io/pepg/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
