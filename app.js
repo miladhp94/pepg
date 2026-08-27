@@ -1,64 +1,12 @@
-const problems={
-governance:{
- pid:'PEPG-0001',
- title:'Centralized governance, limited government capacity, and concentration of execution and oversight',
- description:'A centralized government cannot independently identify, design, implement and monitor every public solution. Excessive concentration can slow decisions and leave citizens, experts and independent actors outside the problem-solving process.',
- solution:'PEPG — Platform-Enabled People Governance',
- solutionText:'Place the public problem at the center and connect citizens, experts, government, implementers and oversight participants through appropriate channels. PEPG is a governance model, not a social network, and is not dependent on a specific platform.',
- solutionProposer:'Milad Habibpour',
- solutionArticle:'https://doi.org/10.5281/zenodo.22118648',
- channels:[
-  ['💡','PEPG Solution Article','The proposed PEPG governance model and its conceptual framework.','PUBLIC','https://doi.org/10.5281/zenodo.22118648',false]
- ]
-},
-road:{
- pid:'PEPG-0002',
- title:'Poor asphalt quality on an abstract street in Tanzania',
- description:'Example public infrastructure problem: residents report poor asphalt quality and seek a coordinated process for identifying the issue, proposing solutions, funding, implementation, contracts, oversight and public reporting.',
- solution:'PEPG coordinates the problem-solving ecosystem',
- solutionText:'Each part of the problem can have its own group or working space. Public groups can be used for problem identification and solutions, while execution and formal oversight groups can be private and access-controlled.',
- channels:[
-  ['📍','Problem Identification','Public residents group for reporting observations, photos and local evidence.','PUBLIC','https://example.org/pepg-0002/problem-identification',false],
-  ['💡','Solutions','Public discussion group where residents, engineers and other participants propose solutions.','PUBLIC','https://example.org/pepg-0002/solutions',false],
-  ['💰','Funding','Public information space for budget and financing discussion.','PUBLIC','https://example.org/pepg-0002/funding',false],
-  ['⚙️','Implementation','Private project group for the selected implementers and authorized participants.','PRIVATE / CONTROLLED','https://example.org/pepg-0002/implementation',true],
-  ['📄','Contracts','Public document space for contracts, versions and official records.','PUBLIC','https://example.org/pepg-0002/contracts',false],
-  ['🔎','Oversight','Private oversight group for approved monitors and authorized institutions.','PRIVATE / APPROVED','https://example.org/pepg-0002/oversight',true],
-  ['📊','Reports','Public reporting group or page for progress, results and feedback.','PUBLIC','https://example.org/pepg-0002/reports',false]
- ]
-}
-};
-
-function openProblem(key){
- const p=problems[key];
- document.getElementById('modalPid').textContent=p.pid;
- document.getElementById('modalTitle').textContent=p.title;
- document.getElementById('modalDescription').textContent=p.description;
- document.getElementById('solutionBox').innerHTML=`<div class="solution"><span class="label">PROPOSED SOLUTION</span><h3>${p.solution}</h3><p>${p.solutionText}</p>${p.solutionProposer?`<div class="solution-proposer">Solution proposer: <strong>${p.solutionProposer}</strong></div>`:''}${p.solutionArticle?`<a class="article-link" href="${p.solutionArticle}" target="_blank" rel="noopener">Read the PEPG article →</a>`:''}</div>`;
- let html='';
- if(p.channels.length){
-  html='<div class="channel-title">Connected participation spaces</div><div class="channels">';
-  p.channels.forEach(c=>{
-   html+=`<div class="channel ${c[5]?'private':''}">
-    <div class="icon">${c[0]}</div><strong>${c[1]}</strong><small>${c[2]}</small>
-    <a href="${c[4]}" target="_blank" rel="noopener">Open example link →</a>
-    <div class="tag">${c[3]}</div>
-   </div>`;
-  });
-  html+='</div>';
- } else {
-  html='<div class="channel-title">PEPG is the proposed solution to this governance problem.</div>';
- }
- document.getElementById('channels').innerHTML=html;
- document.getElementById('modal').classList.add('open');
-}
-function closeModal(){document.getElementById('modal').classList.remove('open')}
-window.onclick=e=>{if(e.target.id==='modal')closeModal()};
-
-function detectProblem(e){
- e.preventDefault();
- const name=document.getElementById('problemName').value.trim();
- const box=document.getElementById('detected');
- box.style.display='block';
- box.innerHTML=`<strong>Problem detected.</strong> "${name}" has been prepared for registration. Proposer: Milad Habibpour (miladhp94).<br><small>This prototype does not yet persist submissions to a database.</small>`;
-}
+const problems=[
+{id:"PEPG-0001",title:"Centralized governance and concentration of execution and oversight",short:"A governance problem in which excessive centralization can reduce distributed participation and concentrate implementation and oversight.",definition:"Government capacity can become highly centralized, while execution and oversight may be concentrated in limited institutional channels. This can slow problem-solving, reduce public participation, and create risks of institutional or operational monopoly.",status:"community",statusLabel:"Community verified",proposer:"Milad Habibpour",solutionProposer:"Milad Habibpour",solution:"Platform-Enabled People Governance (PEPG)",verification:"Community confirmation in this prototype. A future PEPG Board may allow a trusted authority to verify the problem.",evidence:"Prototype record — evidence and verification workflow are illustrative.",definitionProposals:["Improved definition: separate administrative centralization from monopoly in implementation and oversight.","Sub-problem: concentration of oversight functions.","Separate problem: slow coordination of large public projects."],links:{solution:"https://doi.org/10.5281/zenodo.22133939",solutionsGroup:"https://t.me/pepg_solutions_example",implementation:"https://github.com/miladhp94/pepg",oversight:"https://example.org/pepg/oversight/0001",reports:"https://example.org/pepg/reports/0001"}},
+{id:"PEPG-0002",title:"Poor asphalt quality on an Abstract Street in Tanzania",short:"An illustrative public infrastructure problem showing how one problem can connect evidence, solutions, funding, implementation and oversight.",definition:"The asphalt surface on an Abstract Street in Tanzania is reported to deteriorate prematurely, creating mobility, safety, maintenance and public-resource concerns.",status:"authority",statusLabel:"Authority verified",proposer:"Community Problem Reporter",solutionProposer:"Milad Habibpour",solution:"PEPG-based distributed problem-solving workflow",verification:"Illustrative authority verification by a local public works authority. This is prototype data.",evidence:"Illustrative inspection report and community evidence.",definitionProposals:["Sub-problem: drainage failure contributing to pavement deterioration.","Improved definition: specify pavement age, road segment, material specification and failure pattern.","Separate problem: unsafe pedestrian access caused by road-surface failure."],links:{solution:"https://doi.org/10.5281/zenodo.22133939",solutionsGroup:"https://t.me/pepg_solutions_example_0002",funding:"https://example.org/pepg/funding/0002",implementation:"https://example.org/pepg/implementation/0002",oversight:"https://example.org/pepg/oversight/0002",reports:"https://example.org/pepg/reports/0002"}}
+];
+const grid=document.getElementById("problemGrid"),search=document.getElementById("search"),statusFilter=document.getElementById("statusFilter"),problemModal=document.getElementById("problemModal"),submitModal=document.getElementById("submitModal"),detail=document.getElementById("problemDetail");
+function esc(v){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]))}
+function render(){const q=search.value.trim().toLowerCase(),s=statusFilter.value,f=problems.filter(p=>([p.id,p.title,p.short,p.definition].join(" ").toLowerCase().includes(q))&&(s==="all"||p.status===s));grid.innerHTML=f.length?f.map(p=>`<article class="problem-card" data-id="${p.id}"><div class="problem-id">${p.id}</div><h3>${esc(p.title)}</h3><p>${esc(p.short)}</p><div class="tags"><span class="tag ${p.status==="authority"?"verified":"community"}">${p.statusLabel}</span><span class="tag">Problem definition</span><span class="tag">Solutions linked</span></div></article>`).join(""):"<div class='empty'>No problems match your search.</div>";document.querySelectorAll(".problem-card").forEach(c=>c.onclick=()=>openProblem(c.dataset.id))}
+function openProblem(id){const p=problems.find(x=>x.id===id);if(!p)return;const links=Object.entries(p.links||{}).map(([k,u])=>`<a href="${u}" target="_blank">${k.replace(/([A-Z])/g," $1").replace(/^./,c=>c.toUpperCase())}</a>`).join(" · ");detail.innerHTML=`<div class="detail-head"><div class="problem-id">${p.id}</div><h2>${esc(p.title)}</h2><div class="tags"><span class="tag ${p.status==="authority"?"verified":"community"}">${p.statusLabel}</span><span class="tag">Open for participation</span></div></div><div class="detail-grid"><div class="detail-box full"><h4>Problem definition</h4><p>${esc(p.definition)}</p><div class="join-row"><button class="button secondary" onclick="protoJoin('problem discussion')">Join problem discussion</button></div></div><div class="detail-box"><h4>Problem proposer</h4><p>${esc(p.proposer)}</p></div><div class="detail-box"><h4>Verification</h4><p>${esc(p.verification)}</p></div><div class="detail-box full"><h4>Solution</h4><p><strong>${esc(p.solution)}</strong></p><p class="notice">Solution discussions may live outside the Board. The Board keeps the common Problem ID and links the activity.</p><div class="join-row"><a class="button primary" href="${p.links.solution}" target="_blank">Read solution / paper</a><a class="button secondary" href="${p.links.solutionsGroup}" target="_blank">Join solution group</a></div><p class="notice">Solution proposer: ${esc(p.solutionProposer)}</p></div><div class="detail-box full"><h4>Definition proposals</h4><ul>${p.definitionProposals.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><div class="join-row"><button class="button secondary" onclick="protoVote('${p.id}')">Vote on definition</button><button class="button secondary" onclick="protoJoin('definition revision')">Propose a revision</button></div></div><div class="detail-box"><h4>Evidence</h4><p>${esc(p.evidence)}</p></div><div class="detail-box"><h4>External links</h4><p>${links||"No links yet."}</p></div><div class="detail-box full"><h4>Implementation & oversight</h4><p>In a future production Board, joining implementation or oversight teams can require approval by the responsible public authority or project owner.</p><div class="join-row">${p.links.implementation?'<button class="button secondary" onclick="requestJoin(\'implementation\')">Request to join implementation</button>':''}${p.links.oversight?'<button class="button secondary" onclick="requestJoin(\'oversight\')">Request to join oversight</button>':''}${p.links.funding?`<a class="button secondary" href="${p.links.funding}" target="_blank">Funding</a>`:''}${p.links.reports?`<a class="button secondary" href="${p.links.reports}" target="_blank">Reports</a>`:''}</div><p class="notice">Prototype notice: these actions demonstrate the workflow; no real approval or account system is connected yet.</p></div></div>`;problemModal.classList.add("open")}
+function closeModal(id){document.getElementById(id).classList.remove("open")}
+function protoJoin(a){alert(`Prototype: join request for "${a}" would open here.`)}function protoVote(id){alert(`Prototype: voting interface for ${id} would open here.`)}function requestJoin(a){alert(`Prototype: your request to join ${a} would be sent to the responsible authority for approval.`)}
+search.oninput=render;statusFilter.onchange=render;document.getElementById("openSubmit").onclick=()=>submitModal.classList.add("open");document.querySelectorAll("[data-close]").forEach(b=>b.onclick=()=>closeModal(b.dataset.close));[problemModal,submitModal].forEach(m=>m.onclick=e=>{if(e.target===m)closeModal(m.id)});
+document.getElementById("submitForm").onsubmit=e=>{e.preventDefault();const title=document.getElementById("newTitle").value.trim(),definition=document.getElementById("newDefinition").value.trim(),author=document.getElementById("newAuthor").value.trim(),id=`PEPG-${String(problems.length+1).padStart(4,"0")}`;problems.push({id,title,short:definition.slice(0,150)+(definition.length>150?"…":""),definition,status:"unverified",statusLabel:"Unverified",proposer:author,solutionProposer:"Not defined",solution:"No solution linked yet",verification:"Not yet verified.",evidence:"Submitted through the prototype.",definitionProposals:[],links:{}});e.target.reset();closeModal("submitModal");render();alert(`${id} created in the prototype. It is stored only in this browser session.`)};render();
