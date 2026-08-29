@@ -5,6 +5,7 @@
 [![PEPG 2.0](https://img.shields.io/badge/PEPG-2.0-blue)](https://doi.org/10.5281/zenodo.22133939)
 [![Open Source](https://img.shields.io/badge/Open%20Source-GitHub-green)](https://github.com/miladhp94/pepg)
 
+
 ## What is PEPG?
 
 **Platform-Enabled People Governance (PEPG)** is a governance model designed to connect people, institutions, expertise, resources, implementation, and oversight around public problems.
@@ -212,3 +213,13 @@ The proposed mechanisms require further testing, empirical evaluation, security 
 GitHub:
 
 https://github.com/miladhp94
+
+## Permanent Archive
+
+The academic article **Platform-Enabled People Governance (PEPG)** is permanently archived on the Arweave network:
+
+🔗 Permanent Archive:
+https://arweave.net/xZxVWgnGMVFnI3FMnTfHpFdi4F3hllFgT3PScEeMVFw
+
+**Arweave Transaction ID:**
+`xZxVWgnGMVFnI3FMnTfHpFdi4F3hllFgT3PScEeMVFw`
