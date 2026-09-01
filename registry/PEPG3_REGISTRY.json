@@ -1,0 +1,64 @@
+{
+  "project": {
+    "name": "Platform-Enabled People Governance (PEPG)",
+    "version": "PEPG 3",
+    "release": "2026"
+  },
+  "document": {
+    "title": "PEPG 3: Beyond Participation — A Leap in the Architecture of Collective Governance",
+    "subtitle": "Integrating Collective Intelligence, Contextual Representation, and Modular Governance",
+    "type": "Academic Paper",
+    "version": "1.0"
+  },
+  "author": {
+    "name": "Milad Habibpour",
+    "orcid": "0009-0001-4789-0333"
+  },
+  "permanent_assets": {
+    "paper_pdf": {
+      "description": "Official PEPG 3 academic paper PDF",
+      "storage_network": "Arweave",
+      "transaction_id": "A3xCdiVGGbVgaESreDWE8QroCcQaXuM6esoJ3sSBnTQ",
+      "permanent_url": "https://arweave.net/A3xCdiVGGbVgaESreDWE8QroCcQaXuM6esoJ3sSBnTQ"
+    },
+    "visual_identity": {
+      "description": "PEPG master logo and module logo system",
+      "storage_network": "Arweave",
+      "transaction_id": "RUwuFds3XAQDiZzu_9HjlBP-M8KNZXOoOMpy5oFhz14",
+      "permanent_url": "https://arweave.net/RUwuFds3XAQDiZzu_9HjlBP-M8KNZXOoOMpy5oFhz14"
+    }
+  },
+  "publication_channels": {
+    "scientific_archive": "Zenodo",
+    "open_development": "GitHub",
+    "decentralized_storage": "Arweave"
+  },
+  "integrity": {
+    "hash_algorithm": "SHA-256",
+    "paper_hash": "TO_BE_ADDED",
+    "visual_assets_hash": "TO_BE_ADDED",
+    "registry_hash": "TO_BE_ADDED"
+  },
+  "governance_identity": {
+    "purpose": "Official registry of PEPG 3 permanent digital assets",
+    "principles": [
+      "Transparency",
+      "Verifiability",
+      "Open development",
+      "Decentralized preservation"
+    ]
+  },
+  "assets": [
+    {
+      "name": "PEPG 3 Academic Paper",
+      "type": "PDF",
+      "status": "Published"
+    },
+    {
+      "name": "PEPG Visual Identity System",
+      "type": "Logos",
+      "status": "Published"
+    }
+  ],
+  "registry_note": "This file represents the official digital registry of PEPG 3 publication assets."
+}
