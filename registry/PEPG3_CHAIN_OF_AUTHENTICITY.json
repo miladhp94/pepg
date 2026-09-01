@@ -1,0 +1,76 @@
+{
+  "project": {
+    "name": "Platform-Enabled People Governance (PEPG)",
+    "artifact": "PEPG 3 Chain of Authenticity",
+    "version": "1.0",
+    "release_year": "2026",
+    "purpose": "Establish the verifiable relationship between official PEPG 3 digital assets."
+  },
+
+  "author": {
+    "name": "Milad Habibpour",
+    "orcid": "0009-0001-4789-0333"
+  },
+
+  "root_identity": {
+    "name": "PEPG 3: Beyond Participation — A Leap in the Architecture of Collective Governance",
+    "type": "Research Framework Release",
+    "description": "Official third version of the Platform-Enabled People Governance research framework."
+  },
+
+  "authenticity_chain": [
+    {
+      "asset": "PEPG 3 Academic Paper",
+      "type": "PDF",
+      "role": "Primary scientific publication",
+      "storage": "Arweave",
+      "transaction_id": "A3xCdiVGGbVgaESreDWE8QroCcQaXuM6esoJ3sSBnTQ",
+      "url": "https://arweave.net/A3xCdiVGGbVgaESreDWE8QroCcQaXuM6esoJ3sSBnTQ"
+    },
+
+    {
+      "asset": "PEPG Visual Identity System",
+      "type": "Logo Collection",
+      "role": "Official visual identity including master logo and module logos",
+      "storage": "Arweave",
+      "transaction_id": "RUwuFds3XAQDiZzu_9HjlBP-M8KNZXOoOMpy5oFhz14",
+      "url": "https://arweave.net/RUwuFds3XAQDiZzu_9HjlBP-M8KNZXOoOMpy5oFhz14"
+    },
+
+    {
+      "asset": "PEPG3 Registry",
+      "type": "JSON Registry",
+      "role": "Official registry connecting permanent PEPG 3 assets",
+      "storage": "Arweave",
+      "transaction_id": "tQJtxNBIjygEyjWTmnS5ovp1bzt9eAMh8L2HkGxk7HA",
+      "url": "https://arweave.net/tQJtxNBIjygEyjWTmnS5ovp1bzt9eAMh8L2HkGxk7HA"
+    }
+  ],
+
+  "verification_model": {
+    "principles": [
+      "Transparency",
+      "Authenticity verification",
+      "Permanent reference",
+      "Decentralized preservation",
+      "Open research continuity"
+    ],
+
+    "integrity_methods": {
+      "sha256": "To be added",
+      "arweave_transaction_reference": true
+    }
+  },
+
+  "continuity": {
+    "description": "Future PEPG versions should reference previous authenticity chains to preserve historical continuity.",
+    "next_versions": [
+      "PEPG 4",
+      "Future research releases"
+    ]
+  },
+
+  "statement": {
+    "text": "This Chain of Authenticity defines the official relationship between the PEPG 3 publication, visual identity assets, and permanent digital registry. It provides a verifiable reference structure for future research, development, and governance evolution."
+  }
+}
