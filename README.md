@@ -1,4 +1,4 @@
-# PEPG --- Platform-Enabled People Governance
+# PEPG | Platform-Enabled People Governance
 
 ![PEPG](assets/logos/pepg-master-logo.png)
 
