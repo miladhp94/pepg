@@ -1,7 +1,25 @@
 # PEPG | Platform-Enabled People Governance
 
 ![PEPG](assets/logos/pepg-master-logo.png)
+<p align="center">
 
+🪪 Identity  
+→  
+🛡 Trust  
+→  
+🧠 Context  
+→  
+💬 Discussion  
+→  
+🗳 Decision  
+→  
+⚙️ Execution  
+→  
+📜 Report  
+→  
+⛓ Registry
+
+</p>
 > An open governance infrastructure for transforming collective
 > intelligence into transparent, verifiable, and accountable public
 > problem solving.
