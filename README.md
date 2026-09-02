@@ -498,15 +498,16 @@ https://doi.org/10.5281/zenodo.22229362
 
 ## Arweave Archive
 
-A3xCdiVGGbVgaESreDWE8QroCcQaXuM6esoJ3sSBnTQ
+A3xCdiVGGbVgaESreDWE8QroCcQaXuM6esoJ3sSBnTQ(https://turbo-gateway.com/A3xCdiVGGbVgaESreDWE8QroCcQaXuM6esoJ3sSBnTQ)
+
 
 ## Registry
 
-mVWSczAWIonjU0KBe0q0UfAzGFdreqiOBAE4CZRHHBM
+[mVWSczAWIonjU0KBe0q0UfAzGFdreqiOBAE4CZRHHBM](https://turbo-gateway.com/mVWSczAWIonjU0KBe0q0UfAzGFdreqiOBAE4CZRHHBM)
 
 ## Chain of Authenticity
 
-VPRvmP0h77ZC3Bbl72UKIw8EzWKIuNtotXCYBWTPFZ0
+[VPRvmP0h77ZC3Bbl72UKIw8EzWKIuNtotXCYBWTPFZ0](https://turbo-gateway.com/VPRvmP0h77ZC3Bbl72UKIw8EzWKIuNtotXCYBWTPFZ0)
 
 ------------------------------------------------------------------------
 
