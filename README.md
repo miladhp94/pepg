@@ -1,25 +1,7 @@
 # PEPG | Platform-Enabled People Governance
 
 ![PEPG](assets/logos/pepg-master-logo.png)
-<p align="center">
 
-🪪 Identity  
-→  
-🛡 Trust  
-→  
-🧠 Context  
-→  
-💬 Discussion  
-→  
-🗳 Decision  
-→  
-⚙️ Execution  
-→  
-📜 Report  
-→  
-⛓ Registry
-
-</p>
 > An open governance infrastructure for transforming collective
 > intelligence into transparent, verifiable, and accountable public
 > problem solving.
@@ -82,13 +64,19 @@ PEPG 2 introduced:
 PEPG 3 expands the framework with:
 
 -   Identity Verification Engine
+![PEPG](assets/verify.png)
 -   Trust Engine
+![PEPG](assets/logos/pepg-trust.png)
 -   Context Engine
+![PEPG](assets/logos/pepg-context.png)
 -   Delegation Engine
+![PEPG](assets/logos/pepg-delegate.png)
 -   Discussion Engine
+![PEPG](assets/logos/pepg-discuss.png)
 -   Decision Engine
 -   Execution Engine
 -   Reporting Engine
+![PEPG](assets/logos/pepg-report.png)
 
 ------------------------------------------------------------------------
 
