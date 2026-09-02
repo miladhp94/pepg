@@ -1,0 +1,27 @@
+{
+  "project": "PEPG",
+  "version": "PEPG 3",
+  "title": "PEPG 3: A Detailed System Architecture and Operational Specification of the Participatory Governance Framework",
+  "author": "Milad Habibpour",
+  "orcid": "0009-0001-4789-0333",
+  "publication": {
+    "type": "research_article",
+    "doi": "10.5281/zenodo.22229362",
+    "zenodo_url": "https://doi.org/10.5281/zenodo.22229362",
+    "arweave_txid": "A3xCdiVGGbVgaESreDWE8QroCcQaXuM6esoJ3sSBnTQ",
+    "arweave_url": "https://arweave.net/A3xCdiVGGbVgaESreDWE8QroCcQaXuM6esoJ3sSBnTQ",
+    "pdf_sha256": "f6ee1fe6edaebe1e0872bd15cad4a24f249ebfe80a38abb2e3755ea3ba977ed7"
+  },
+  "visual_identity": {
+    "arweave_txid": "RUwuFds3XAQDiZzu_9HjlBP-M8KNZXOoOMpy5oFhz14",
+    "arweave_url": "https://arweave.net/RUwuFds3XAQDiZzu_9HjlBP-M8KNZXOoOMpy5oFhz14"
+  },
+  "registry": {
+    "arweave_txid": "tQJtxNBIjygEyjWTmnS5ovp1bzt9eAMh8L2HkGxk7HA",
+    "arweave_url": "https://arweave.net/tQJtxNBIjygEyjWTmnS5ovp1bzt9eAMh8L2HkGxk7HA"
+  },
+  "chain_of_authenticity": {
+    "arweave_txid": "asmM5wGdl9JAMj3yCijVvL6OJKqRfViCVxLaYOGwAw8",
+    "arweave_url": "https://arweave.net/asmM5wGdl9JAMj3yCijVvL6OJKqRfViCVxLaYOGwAw8"
+  }
+}
