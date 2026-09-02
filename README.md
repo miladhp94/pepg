@@ -498,7 +498,7 @@ https://doi.org/10.5281/zenodo.22229362
 
 ## Arweave Archive
 
-A3xCdiVGGbVgaESreDWE8QroCcQaXuM6esoJ3sSBnTQ(https://turbo-gateway.com/A3xCdiVGGbVgaESreDWE8QroCcQaXuM6esoJ3sSBnTQ)
+[A3xCdiVGGbVgaESreDWE8QroCcQaXuM6esoJ3sSBnTQ](https://turbo-gateway.com/A3xCdiVGGbVgaESreDWE8QroCcQaXuM6esoJ3sSBnTQ)
 
 
 ## Registry
