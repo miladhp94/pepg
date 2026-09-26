@@ -483,7 +483,12 @@ Certification states:
 -   Revoked
 
 Certification is module-specific.
+------------------------------------------------------------------------
+## Implementation
 
+For the complete implementation guide, see:
+
+👉 [PEPG Implementation Guide](docs/IMPLEMENTATION.md)
 ------------------------------------------------------------------------
 
 # Permanent Digital Registry
